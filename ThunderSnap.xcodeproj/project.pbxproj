@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A5954BAEFF56BBA8A637FFA /* Pods_ThunderSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D54CD3930CC8755C8FDC6A /* Pods_ThunderSnap.framework */; };
+		E52D92931D95783C00FE0B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92731D95783C00FE0B01 /* AppDelegate.swift */; };
+		E52D92941D95783C00FE0B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52D92741D95783C00FE0B01 /* LaunchScreen.storyboard */; };
+		E52D92951D95783C00FE0B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52D92761D95783C00FE0B01 /* Main.storyboard */; };
+		E52D92961D95783C00FE0B01 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92791D95783C00FE0B01 /* ChatViewController.swift */; };
+		E52D92971D95783C00FE0B01 /* ChooseUserNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927A1D95783C00FE0B01 /* ChooseUserNavViewController.swift */; };
+		E52D92981D95783C00FE0B01 /* ChooseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927B1D95783C00FE0B01 /* ChooseUserViewController.swift */; };
+		E52D92991D95783C00FE0B01 /* FreshmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927C1D95783C00FE0B01 /* FreshmanViewController.swift */; };
+		E52D929A1D95783C00FE0B01 /* HomeNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927D1D95783C00FE0B01 /* HomeNavViewController.swift */; };
+		E52D929B1D95783C00FE0B01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927E1D95783C00FE0B01 /* HomeViewController.swift */; };
+		E52D929C1D95783C00FE0B01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D927F1D95783C00FE0B01 /* LoginViewController.swift */; };
+		E52D929D1D95783C00FE0B01 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92801D95783C00FE0B01 /* SignUpViewController.swift */; };
+		E52D929E1D95783C00FE0B01 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92811D95783C00FE0B01 /* TabBarViewController.swift */; };
+		E52D929F1D95783C00FE0B01 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92831D95783C00FE0B01 /* UIColor+Hex.swift */; };
+		E52D92A01D95783C00FE0B01 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92841D95783C00FE0B01 /* UIImageView+Cache.swift */; };
+		E52D92A21D95783C00FE0B01 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92871D95783C00FE0B01 /* FirebaseService.swift */; };
+		E52D92A31D95783C00FE0B01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52D92881D95783C00FE0B01 /* Images.xcassets */; };
+		E52D92A51D95783C00FE0B01 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928B1D95783C00FE0B01 /* Chat.swift */; };
+		E52D92A61D95783C00FE0B01 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928C1D95783C00FE0B01 /* Message.swift */; };
+		E52D92A71D95783C00FE0B01 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928D1D95783C00FE0B01 /* Room.swift */; };
+		E52D92A81D95783C00FE0B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928E1D95783C00FE0B01 /* User.swift */; };
+		E52D92A91D95783C00FE0B01 /* profile_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E52D928F1D95783C00FE0B01 /* profile_blank@2x.png */; };
+		E52D92AA1D95783C00FE0B01 /* ChooseUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92921D95783C00FE0B01 /* ChooseUserTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33D54CD3930CC8755C8FDC6A /* Pods_ThunderSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThunderSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		579E6D00E51046B5041AD474 /* Pods-ChatChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChat/Pods-ChatChat.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8BB92B0F21333AF79AE89E /* Pods-ThunderSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThunderSnap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThunderSnap/Pods-ThunderSnap.release.xcconfig"; sourceTree = "<group>"; };
+		BB5355761BEF765800321277 /* ThunderSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThunderSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7601AD628ABA83B57DDB4A7 /* Pods-ChatChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChat/Pods-ChatChat.release.xcconfig"; sourceTree = "<group>"; };
+		E1D783667CA0E7C0665A4CF6 /* Pods_ChatChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52D92731D95783C00FE0B01 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E52D92751D95783C00FE0B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E52D92771D95783C00FE0B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E52D92791D95783C00FE0B01 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E52D927A1D95783C00FE0B01 /* ChooseUserNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUserNavViewController.swift; sourceTree = "<group>"; };
+		E52D927B1D95783C00FE0B01 /* ChooseUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUserViewController.swift; sourceTree = "<group>"; };
+		E52D927C1D95783C00FE0B01 /* FreshmanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreshmanViewController.swift; sourceTree = "<group>"; };
+		E52D927D1D95783C00FE0B01 /* HomeNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavViewController.swift; sourceTree = "<group>"; };
+		E52D927E1D95783C00FE0B01 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E52D927F1D95783C00FE0B01 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E52D92801D95783C00FE0B01 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E52D92811D95783C00FE0B01 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E52D92831D95783C00FE0B01 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E52D92841D95783C00FE0B01 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		E52D92851D95783C00FE0B01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E52D92871D95783C00FE0B01 /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		E52D92881D95783C00FE0B01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E52D92891D95783C00FE0B01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52D928B1D95783C00FE0B01 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		E52D928C1D95783C00FE0B01 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E52D928D1D95783C00FE0B01 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		E52D928E1D95783C00FE0B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E52D928F1D95783C00FE0B01 /* profile_blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_blank@2x.png"; sourceTree = "<group>"; };
+		E52D92901D95783C00FE0B01 /* ThunderSnap-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ThunderSnap-Bridging-Header.h"; sourceTree = "<group>"; };
+		E52D92921D95783C00FE0B01 /* ChooseUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseUserTableViewCell.swift; sourceTree = "<group>"; };
+		E63374409CA01C27A3520724 /* Pods-ThunderSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThunderSnap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThunderSnap/Pods-ThunderSnap.debug.xcconfig"; sourceTree = "<group>"; };
+		E8DDF38A1BEF88DC00B5F45A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		E8DDF38C1BEF88E200B5F45A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5355731BEF765800321277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5954BAEFF56BBA8A637FFA /* Pods_ThunderSnap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85DB15776B3ACE41DF631DCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				579E6D00E51046B5041AD474 /* Pods-ChatChat.debug.xcconfig */,
+				C7601AD628ABA83B57DDB4A7 /* Pods-ChatChat.release.xcconfig */,
+				E63374409CA01C27A3520724 /* Pods-ThunderSnap.debug.xcconfig */,
+				9A8BB92B0F21333AF79AE89E /* Pods-ThunderSnap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97CEDEF6DA0B51A3522B766A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDF38C1BEF88E200B5F45A /* Social.framework */,
+				E8DDF38A1BEF88DC00B5F45A /* Accounts.framework */,
+				E1D783667CA0E7C0665A4CF6 /* Pods_ChatChat.framework */,
+				33D54CD3930CC8755C8FDC6A /* Pods_ThunderSnap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB53556D1BEF765800321277 = {
+			isa = PBXGroup;
+			children = (
+				E52D92721D95783C00FE0B01 /* ThunderSnap */,
+				BB5355771BEF765800321277 /* Products */,
+				85DB15776B3ACE41DF631DCF /* Pods */,
+				97CEDEF6DA0B51A3522B766A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5355771BEF765800321277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5355761BEF765800321277 /* ThunderSnap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52D92721D95783C00FE0B01 /* ThunderSnap */ = {
+			isa = PBXGroup;
+			children = (
+				E52D92731D95783C00FE0B01 /* AppDelegate.swift */,
+				E52D92741D95783C00FE0B01 /* LaunchScreen.storyboard */,
+				E52D92761D95783C00FE0B01 /* Main.storyboard */,
+				E52D92781D95783C00FE0B01 /* Controllers */,
+				E52D92821D95783C00FE0B01 /* Extensions */,
+				E52D92851D95783C00FE0B01 /* GoogleService-Info.plist */,
+				E52D92861D95783C00FE0B01 /* Helpers */,
+				E52D92881D95783C00FE0B01 /* Images.xcassets */,
+				E52D92891D95783C00FE0B01 /* Info.plist */,
+				E52D928A1D95783C00FE0B01 /* Models */,
+				E52D928F1D95783C00FE0B01 /* profile_blank@2x.png */,
+				E52D92901D95783C00FE0B01 /* ThunderSnap-Bridging-Header.h */,
+				E52D92911D95783C00FE0B01 /* Views */,
+			);
+			path = ThunderSnap;
+			sourceTree = "<group>";
+		};
+		E52D92781D95783C00FE0B01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E52D92791D95783C00FE0B01 /* ChatViewController.swift */,
+				E52D927A1D95783C00FE0B01 /* ChooseUserNavViewController.swift */,
+				E52D927B1D95783C00FE0B01 /* ChooseUserViewController.swift */,
+				E52D927C1D95783C00FE0B01 /* FreshmanViewController.swift */,
+				E52D927D1D95783C00FE0B01 /* HomeNavViewController.swift */,
+				E52D927E1D95783C00FE0B01 /* HomeViewController.swift */,
+				E52D927F1D95783C00FE0B01 /* LoginViewController.swift */,
+				E52D92801D95783C00FE0B01 /* SignUpViewController.swift */,
+				E52D92811D95783C00FE0B01 /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E52D92821D95783C00FE0B01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E52D92831D95783C00FE0B01 /* UIColor+Hex.swift */,
+				E52D92841D95783C00FE0B01 /* UIImageView+Cache.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E52D92861D95783C00FE0B01 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E52D92871D95783C00FE0B01 /* FirebaseService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E52D928A1D95783C00FE0B01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E52D928B1D95783C00FE0B01 /* Chat.swift */,
+				E52D928C1D95783C00FE0B01 /* Message.swift */,
+				E52D928D1D95783C00FE0B01 /* Room.swift */,
+				E52D928E1D95783C00FE0B01 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E52D92911D95783C00FE0B01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E52D92921D95783C00FE0B01 /* ChooseUserTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5355751BEF765800321277 /* ThunderSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5355881BEF765800321277 /* Build configuration list for PBXNativeTarget "ThunderSnap" */;
+			buildPhases = (
+				E8CE6FD67453F3208A90364C /* [CP] Check Pods Manifest.lock */,
+				BB5355721BEF765800321277 /* Sources */,
+				BB5355731BEF765800321277 /* Frameworks */,
+				BB5355741BEF765800321277 /* Resources */,
+				6FB7E69470DD81D7984EDE52 /* [CP] Embed Pods Frameworks */,
+				5D170929619EDFD2B561CD41 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThunderSnap;
+			productName = ChatChat;
+			productReference = BB5355761BEF765800321277 /* ThunderSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB53556E1BEF765800321277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					BB5355751BEF765800321277 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = C22UGULQCC;
+					};
+				};
+			};
+			buildConfigurationList = BB5355711BEF765800321277 /* Build configuration list for PBXProject "ThunderSnap" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB53556D1BEF765800321277;
+			productRefGroup = BB5355771BEF765800321277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5355751BEF765800321277 /* ThunderSnap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5355741BEF765800321277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D92941D95783C00FE0B01 /* LaunchScreen.storyboard in Resources */,
+				E52D92A31D95783C00FE0B01 /* Images.xcassets in Resources */,
+				E52D92951D95783C00FE0B01 /* Main.storyboard in Resources */,
+				E52D92A91D95783C00FE0B01 /* profile_blank@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D170929619EDFD2B561CD41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThunderSnap/Pods-ThunderSnap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB7E69470DD81D7984EDE52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThunderSnap/Pods-ThunderSnap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CE6FD67453F3208A90364C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5355721BEF765800321277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D92981D95783C00FE0B01 /* ChooseUserViewController.swift in Sources */,
+				E52D929A1D95783C00FE0B01 /* HomeNavViewController.swift in Sources */,
+				E52D92A71D95783C00FE0B01 /* Room.swift in Sources */,
+				E52D92961D95783C00FE0B01 /* ChatViewController.swift in Sources */,
+				E52D92991D95783C00FE0B01 /* FreshmanViewController.swift in Sources */,
+				E52D929C1D95783C00FE0B01 /* LoginViewController.swift in Sources */,
+				E52D92A01D95783C00FE0B01 /* UIImageView+Cache.swift in Sources */,
+				E52D92A81D95783C00FE0B01 /* User.swift in Sources */,
+				E52D929F1D95783C00FE0B01 /* UIColor+Hex.swift in Sources */,
+				E52D92A21D95783C00FE0B01 /* FirebaseService.swift in Sources */,
+				E52D92971D95783C00FE0B01 /* ChooseUserNavViewController.swift in Sources */,
+				E52D92A51D95783C00FE0B01 /* Chat.swift in Sources */,
+				E52D929D1D95783C00FE0B01 /* SignUpViewController.swift in Sources */,
+				E52D92AA1D95783C00FE0B01 /* ChooseUserTableViewCell.swift in Sources */,
+				E52D929B1D95783C00FE0B01 /* HomeViewController.swift in Sources */,
+				E52D92A61D95783C00FE0B01 /* Message.swift in Sources */,
+				E52D929E1D95783C00FE0B01 /* TabBarViewController.swift in Sources */,
+				E52D92931D95783C00FE0B01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E52D92741D95783C00FE0B01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52D92751D95783C00FE0B01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E52D92761D95783C00FE0B01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52D92771D95783C00FE0B01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5355861BEF765800321277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB5355871BEF765800321277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5355891BEF765800321277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63374409CA01C27A3520724 /* Pods-ThunderSnap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ThunderSnap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teressa.ThunderSnap;
+				PRODUCT_NAME = ThunderSnap;
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThunderSnap/ThunderSnap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB53558A1BEF765800321277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8BB92B0F21333AF79AE89E /* Pods-ThunderSnap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ThunderSnap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teressa.ThunderSnap;
+				PRODUCT_NAME = ThunderSnap;
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThunderSnap/ThunderSnap-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5355711BEF765800321277 /* Build configuration list for PBXProject "ThunderSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5355861BEF765800321277 /* Debug */,
+				BB5355871BEF765800321277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5355881BEF765800321277 /* Build configuration list for PBXNativeTarget "ThunderSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5355891BEF765800321277 /* Debug */,
+				BB53558A1BEF765800321277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB53556E1BEF765800321277 /* Project object */;
+}
