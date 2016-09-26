@@ -1,9 +1,10 @@
 //
 //  User.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.
+//
 //
 
 import Firebase
@@ -19,11 +20,11 @@ class User: NSObject {
     var profile_image: String?
     var uid: String?
     
-    class func userFromId(id: String, user: (User) -> ()){
-        if let cachedUser = userCache.objectForKey(id) as? User{
+    class func userFromId(id: String, user: (User) -> ()) {
+        if let cachedUser = userCache.objectForKey(id) as? User {
             user(cachedUser)
         }
-        else{
+        else {
             let userRef = ref?.child("users/\(id)")
             userRef?.observeSingleEventOfType(.Value, withBlock: { (data) in
                 if let userData = data.value as? [String: AnyObject]{
@@ -32,18 +33,17 @@ class User: NSObject {
                     userCache.setObject(retUser, forKey: id)
                     user(retUser)
                 }
-                else{
+                else {
                     fatalError("What went wrong here ?")
                 }
             })
         }
     }
     
-    class func getCurrentUser(data: (User) -> ()){
+    class func getCurrentUser(data: (User) -> ()) {
         userFromId(currentUser!.uid) { (user) in
             data(user)
         }
         
     }
-    
 }

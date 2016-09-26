@@ -1,6 +1,6 @@
 //
 //  ChooseUserViewController.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.
@@ -69,7 +69,7 @@ class ChooseUserViewController: UIViewController{
     
 }
 
-extension ChooseUserViewController{
+extension ChooseUserViewController {
     func refreshTable(refreshControl: UIRefreshControl){
         self.refreshControl.beginRefreshing()
         self.usersRef?.removeAllObservers()
@@ -147,31 +147,12 @@ extension ChooseUserViewController: UITableViewDataSource, UITableViewDelegate{
             vc.senderDisplayName = user1.username
             //print("DISPLAY NAME \(currentUser?.displayName)")
             vc.url = user.profile_image
-//            vc.user = user
-//            vc.url = user.profile_image!
             vc.title = "\(user.username!)"
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
-//        print("USER NAME IS \(user.username)")
-//        vc.title = "\(user.username!)"
-//        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//        vc.hidesBottomBarWhenPushed = true
-//        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-//    func handleTapOnProfileImage(sender: UITapGestureRecognizer){
-//        if let imageView = sender.view as? UIImageView{
-//            let vc = ImageZoomViewController()
-//            let user = users[imageView.tag]
-//            vc.title = user.username!
-//            vc.url = user.profile_image!
-//            vc.hidesBottomBarWhenPushed = true
-//            navigationController?.pushViewController(vc, animated: true)
-//        }
-//    }
     
 }
 

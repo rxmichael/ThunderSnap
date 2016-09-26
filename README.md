@@ -35,8 +35,8 @@ Upon loading a chat the images and media are downloaded *asynchronoulsy* to prev
 ##Work in progress
 - [x] Allow users to send and recieves media (videos/images)
 - [x] Asynchronously load images and videos and sort them in place.
-- [] Push notifications
-- [] Reorder code strucutre
+- [ ] Push notifications
+- [ ] Reorder code strucutre
 
 [1]: http://www.cocoapods.org
 [2]: https://firebase.google.com/

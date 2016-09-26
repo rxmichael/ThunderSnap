@@ -1,6 +1,6 @@
 //
 //  UIImageView+Cache.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.
@@ -11,12 +11,11 @@ import UIKit
 
 private let cache = NSCache()
 
-extension UIImageView{
+extension UIImageView {
     func loadImageFromUrl(urlString: String){
         self.image = nil
-        if let cachedImage = cache.objectForKey(urlString) as? UIImage{
+        if let cachedImage = cache.objectForKey(urlString) as? UIImage {
             dispatch_async(dispatch_get_main_queue(), {
-                
                 self.image = cachedImage
             })
             return
@@ -30,7 +29,7 @@ extension UIImageView{
             if error != nil {
                 fatalError("The debugger is your best friend, \(error?.localizedDescription)")
             }
-            else{
+            else {
                 dispatch_async(dispatch_get_main_queue(), {
                     if let newImage = UIImage(data: data!){
                         cache.setObject(newImage, forKey: urlString)

@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.

@@ -25,11 +25,11 @@
 		E52D92A21D95783C00FE0B01 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92871D95783C00FE0B01 /* FirebaseService.swift */; };
 		E52D92A31D95783C00FE0B01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52D92881D95783C00FE0B01 /* Images.xcassets */; };
 		E52D92A51D95783C00FE0B01 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928B1D95783C00FE0B01 /* Chat.swift */; };
-		E52D92A61D95783C00FE0B01 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928C1D95783C00FE0B01 /* Message.swift */; };
 		E52D92A71D95783C00FE0B01 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928D1D95783C00FE0B01 /* Room.swift */; };
 		E52D92A81D95783C00FE0B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D928E1D95783C00FE0B01 /* User.swift */; };
 		E52D92A91D95783C00FE0B01 /* profile_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E52D928F1D95783C00FE0B01 /* profile_blank@2x.png */; };
 		E52D92AA1D95783C00FE0B01 /* ChooseUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D92921D95783C00FE0B01 /* ChooseUserTableViewCell.swift */; };
+		E5B091081D95BF27009B45E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E52D92851D95783C00FE0B01 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,6 @@
 		E52D92881D95783C00FE0B01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E52D92891D95783C00FE0B01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52D928B1D95783C00FE0B01 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		E52D928C1D95783C00FE0B01 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E52D928D1D95783C00FE0B01 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		E52D928E1D95783C00FE0B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E52D928F1D95783C00FE0B01 /* profile_blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_blank@2x.png"; sourceTree = "<group>"; };
@@ -178,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				E52D928B1D95783C00FE0B01 /* Chat.swift */,
-				E52D928C1D95783C00FE0B01 /* Message.swift */,
 				E52D928D1D95783C00FE0B01 /* Room.swift */,
 				E52D928E1D95783C00FE0B01 /* User.swift */,
 			);
@@ -255,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B091081D95BF27009B45E0 /* GoogleService-Info.plist in Resources */,
 				E52D92941D95783C00FE0B01 /* LaunchScreen.storyboard in Resources */,
 				E52D92A31D95783C00FE0B01 /* Images.xcassets in Resources */,
 				E52D92951D95783C00FE0B01 /* Main.storyboard in Resources */,
@@ -332,7 +331,6 @@
 				E52D929D1D95783C00FE0B01 /* SignUpViewController.swift in Sources */,
 				E52D92AA1D95783C00FE0B01 /* ChooseUserTableViewCell.swift in Sources */,
 				E52D929B1D95783C00FE0B01 /* HomeViewController.swift in Sources */,
-				E52D92A61D95783C00FE0B01 /* Message.swift in Sources */,
 				E52D929E1D95783C00FE0B01 /* TabBarViewController.swift in Sources */,
 				E52D92931D95783C00FE0B01 /* AppDelegate.swift in Sources */,
 			);

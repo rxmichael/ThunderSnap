@@ -1,6 +1,6 @@
 //
 //  UIColor+Hex.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 Razeware LLC. All rights reserved.

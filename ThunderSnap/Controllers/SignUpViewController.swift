@@ -1,6 +1,6 @@
 //
 //  SignUpViewController.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.
@@ -160,7 +160,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func layoutFieldsView(){
+    func layoutFieldsView() {
         fieldsView.snp_makeConstraints { (make) in
             make.centerX.equalTo(view.snp_centerX)
             make.centerY.equalTo(view.snp_centerY)
@@ -178,7 +178,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         layoutFields()
     }
     
-    func layoutFields(){
+    func layoutFields() {
         usernameField.snp_makeConstraints { (make) in
             make.left.equalTo(fieldsView.snp_left).offset(12)
             make.right.equalTo(fieldsView.snp_right).offset(-12)
@@ -216,7 +216,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func layoutButtons(){
+    func layoutButtons() {
         signupButton.snp_makeConstraints { (make) in
             make.centerX.equalTo(view.snp_centerX)
             make.top.equalTo(fieldsView.snp_bottom).offset(12)
@@ -234,8 +234,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     // - MARK: UIButton Actions
     
-    func signUp(){
-        if usernameField.text?.isEmpty == false{
+    func signUp() {
+        if usernameField.text?.isEmpty == false {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setBool(true, forKey: "Freshman")
             FIRAuth.auth()?.createUserWithEmail(emailField.text!, password: passwordField.text!, completion: { (firUser, error) in
@@ -251,18 +251,18 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 else{
                     if let user = firUser{
                         guard let image = UIImage(named: "funny")
-                            else{fatalError("You forgot to insert the Image")}
+                            else { fatalError("You forgot to insert the Image")}
                         guard let imageData = UIImageJPEGRepresentation(image, 0.7)
-                            else{fatalError("You've made something wrong here.")}
+                            else { fatalError("You've made something wrong here.")}
                         let imageName = NSUUID().UUIDString
                         let profileStorage = storage?.child("\(user.uid)/\(imageName).jpg")
                         profileStorage?.putData(imageData, metadata: nil, completion: { (metaData, error) in
-                            if error != nil{
+                            if error != nil {
                                 // We will try it later again...
                                 return
                             }
                             guard let url = metaData?.downloadURL()?.absoluteString
-                                else{fatalError("Oops, look at the debugger for more information.")}
+                                else { fatalError("Oops, look at the debugger for more information.")}
                             let userRef = ref?.child("users/\(user.uid)")
                             let userData = [
                                 "email": user.email!,
@@ -276,7 +276,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 }
             })
         }
-        else{
+        else {
             let view = MessageView.viewFromNib(layout: .CardView)
             view.configureDropShadow()
             let iconText = "😳"
@@ -292,40 +292,36 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     // - MARK: Error Handling
     
-    func checkForErrorCode(error: NSError?) -> String{
-        
-        // Because of any Reason a Switch-Statement won't compile because Xcode says: "ErrorCodeInvalidEmail is no member of FIRAuthErrorCode".
+    func checkForErrorCode(error: NSError?) -> String {
         
         var string = ""
         
         let code = FIRAuthErrorCode(rawValue: error!.code)
         
-        if code == FIRAuthErrorCode.ErrorCodeInvalidEmail	{
+        if code == FIRAuthErrorCode.ErrorCodeInvalidEmail {
             string = "Please enter a valid Email."
             return string
         }
-        else if code == FIRAuthErrorCode.ErrorCodeEmailAlreadyInUse{
+        else if code == FIRAuthErrorCode.ErrorCodeEmailAlreadyInUse {
             string = "This Email is already in use."
             return string
         }
-        else if code == FIRAuthErrorCode.ErrorCodeWeakPassword{
+        else if code == FIRAuthErrorCode.ErrorCodeWeakPassword {
             string = "This password is too weak. \(error!.userInfo[NSLocalizedFailureReasonErrorKey]!)"
             return string
         }
-        else{
+        else {
             string = "\(error!.localizedDescription)"
             return string
         }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        print("SHOULD RETURN ")
         textField.resignFirstResponder()
         return true
     }
     
    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("TOUCIGIGNFDF ")
         self.view.endEditing(true)
     }
     

@@ -1,6 +1,6 @@
 //
 //  LohInViewController.swift
-//  ChatChat
+//  ThunderSnap
 //
 //  Created by blackbriar on 9/14/16.
 //  Copyright © 2016 com.teressa. All rights reserved.
@@ -141,7 +141,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func layoutFieldsView(){
+    func layoutFieldsView() {
         fieldsView.snp_makeConstraints { (make) in
             make.centerX.equalTo(view.snp_centerX)
             make.centerY.equalTo(view.snp_centerY)
@@ -149,7 +149,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             make.height.equalTo(125)
             
         }
-        
         fieldsView.addSubview(emailField)
         fieldsView.addSubview(passwordField)
         fieldsView.addSubview(emailSeperatorView)
@@ -157,7 +156,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         layoutFields()
     }
     
-    func layoutFields(){
+    func layoutFields() {
         emailField.snp_makeConstraints { (make) in
             make.left.equalTo(fieldsView.snp_left).offset(12)
             make.right.equalTo(fieldsView.snp_right).offset(-12)
@@ -181,7 +180,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func layoutButtons(){
+    func layoutButtons() {
         loginButton.snp_makeConstraints { (make) in
             make.centerX.equalTo(view.snp_centerX)
             make.top.equalTo(fieldsView.snp_bottom).offset(12)
@@ -201,7 +200,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // - MARK: UIButton Actions
     
     func login(){
-        if let email = emailField.text, password = passwordField.text{
+        if let email = emailField.text, password = passwordField.text {
             FIRAuth.auth()?.signInWithEmail(email, password: password, completion: { (user, error) in
                 if error != nil {
                     let view = MessageView.viewFromNib(layout: .CardView)
@@ -212,9 +211,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     SwiftMessages.show(view: view)
                     return
                 }
-                
                 return
-                
             })
         }
         else {
@@ -227,7 +224,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func showSignup(){
+    func showSignup() {
         let svc = SignUpViewController()
         svc.modalTransitionStyle = .CrossDissolve
         presentViewController(svc, animated: true, completion: nil)
@@ -236,7 +233,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // - MARK: Error Handling
     
-    func checkForErrorCode(error: NSError?) -> String{
+    func checkForErrorCode(error: NSError?) -> String {
         
         // Same like in Signup
         
@@ -244,32 +241,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let code = FIRAuthErrorCode(rawValue: error!.code)
         
-        if code == FIRAuthErrorCode.ErrorCodeOperationNotAllowed{
+        if code == FIRAuthErrorCode.ErrorCodeOperationNotAllowed {
             string = "User doesn't exist."
             return string
         }
-        else if code == FIRAuthErrorCode.ErrorCodeUserDisabled{
+        else if code == FIRAuthErrorCode.ErrorCodeUserDisabled {
             string = "User has been deleted."
             return string
         }
-        else if code == FIRAuthErrorCode.ErrorCodeWrongPassword{
+        else if code == FIRAuthErrorCode.ErrorCodeWrongPassword {
             string = "You have entered the wrong password, please try again."
             return string
         }
-        else{
+        else {
             string = "Make sure you have entered an email and password."
             return string
         }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        print("SHOULD RETURN ")
         textField.resignFirstResponder()
         return true
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("TOUCIGIGNFDF ")
         self.view.endEditing(true)
     }
     
