@@ -14,23 +14,24 @@ $ open ThunderSnap.xcworkspace
 ## Design Choices
 This project does NOT use storyboard and uses [SnapKit] [3] to programmatically create elements.
 
-The chat room is represent using a [JSQMessageViewController] [4].
+The chat room is represented using a [JSQMessageViewController] [4].
 
 [ALACameraViewController] [5] is used for prompting the user to chose a profile picture.
 
 ## Extensions
-I created a ```UIColor``` extension to allow me to used hex values.
+I created a ```UIColor``` extension to allow me to use hex values when creating a UIColor.
 
-I also created a ```UIIMageView``` extensions to support caching.
+I also created a ```UIIMageView``` extension to support caching.
 
-Also note that I could've create an ```NSDate``` extension to convery the [Firebase] [2] server timestamp to an ```NSDate``` object but I chose to do it in the ```ChatViewController```
+Also note that I could've created an ```NSDate``` extension to convert the [Firebase] [2] server timestamp to an ```NSDate``` object but I chose to do it in the ```ChatViewController```
 
 ## Sample Use
-Users can signup or login at launch. Switch to "choose users" tab to select another registered user.
+Users can signup or login at launch. Switch to "choose users" tab to select another registered user to start a conversation with.
 
 ## Design
 For this app, I used [Firebase] [2] as a backend service. The profile images and photo/video media messages are stored in [Firebase] [2] storage.
-Upon loading a chat the images and media are downloaded *asynchronoulsy* to prevent the app from blocking, The messages are then reordered using a ```in-place``` sort on their ```date``` property.
+
+Upon loading a chat, the images and media messages are downloaded *asynchronoulsy* to prevent the app from blocking. The messages are then reordered using a ```in-place``` sort on their ```date``` property.
 
 ##Work in progress
 - [x] Allow users to send and recieves media (videos/images)
